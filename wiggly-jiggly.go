@@ -8,10 +8,9 @@ import "github.com/go-vgo/robotgo"
 
 func jiggly() {
 	time.Sleep(1 * time.Second)
-	robotgo.MoveRelative(0, -10)
 	robotgo.MoveRelative(-10, 0)
+	time.Sleep(250 * time.Millisecond)
 	robotgo.MoveRelative(10, 0)
-	robotgo.MoveRelative(0, 10)
 }
 
 func doMouseStuff(tx chan bool) {
